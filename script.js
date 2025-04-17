@@ -2,6 +2,7 @@
 const input = document.getElementById("add-item");
 const form = document.querySelector("form");
 const itemsContainer = document.querySelector(".items-container");
+const deleteAlert = document.querySelector(".delete-alert");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -22,7 +23,9 @@ itemsContainer.addEventListener("click", (e) => {
     if(e.target.closest('.delete-btn')) {
         const item = e.target.closest(".item");
         if(item) item.remove(); 
+        alert();
     }
+
 });
 
 function newItem(text) {
@@ -34,3 +37,12 @@ function newItem(text) {
         </button>
     `;
 }
+
+function alert() {
+    deleteAlert.classList.remove("hidden");
+  
+    setTimeout(() => {
+      deleteAlert.classList.add("hidden");
+    }, 2000);
+  }
+  

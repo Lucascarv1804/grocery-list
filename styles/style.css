@@ -114,10 +114,14 @@ form {
     border-radius: 12px;
     cursor: pointer;
 
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    
     & .bi-exclamation-circle-fill {
         margin-right: .5rem;
     }
-
+    
     & .bi-x {
         font-size: 24px;
         margin-left: auto;
@@ -125,7 +129,7 @@ form {
 }
 
 .delete-alert.hidden {
-    display: none;
+    opacity: 0;
 }
 
 @media (width >= 768px) {
