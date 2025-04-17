@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickList | Lista de Compras</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- JS File -->
+    <script src="./script.js" defer></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="hidden">
+            <img src="./icons/logo.svg" alt="QuickList Logo" id="logo">
+        </header>
+
+        <a href="#">
+            <i class="bi bi-arrow-left-short"></i>
+            Voltar
+        </a>
+
+        <h1>Compras da semana</h1>
+
+        <form>
+            <div class="add-item-box">
+                <input type="text" name="add-item" id="add-item" placeholder="Adicionar novo item" autocomplete="off">
+                <button id="add-button" class="btn">Adicionar item</button>
+            </div>
+
+            <div class="items-container">
+                <!-- <label class="item">
+                    <input type="checkbox" name="" class="checkbox">
+                    <span>Cafe</span>
+                    <button class="delete-btn">
+                        <i class="bi bi-trash3"></i>
+                    </button>
+                </label> -->
+            </div>
+        </form>
+
+        <div class="delete-alert hidden">
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <span>O item foi removido da lista</span>
+            <i class="bi bi-x"></i>
+        </div>
+    </main>
+</body>
+
+</html>

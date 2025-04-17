@@ -1,0 +1,56 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styles */
+:root {
+  /* background */
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
+
+  /* color */
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+
+  /* content */
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tertiary: #9CA3AF;
+  --always-white: #FFFFFF;
+
+  /* border */
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
+
+  --ff-base: 'Inter', sans-serif;
+
+  --fs-lg: 1.5rem;
+  --fs-base: 1rem;
+  --fs-sm: 0.875rem;
+
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-md: 500;
+}
+
+
+html {
+  font-family: var(--ff-base);
+  background-color: var(--background-primary);
+}
+
+h1 {
+  font: var(--fw-bold) var(--fs-lg)/1.5 var(--ff-base);
+  color: var(--content-primary);
+}
+
+a {
+  font: var(--fw-md) var(--fs-sm)/16px var(--ff-base);
+}

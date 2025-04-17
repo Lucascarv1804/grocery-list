@@ -1,0 +1,147 @@
+header {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    & .bi-arrow-left-short {
+        font-size: 1.2rem
+    }
+}
+
+h1 {
+    margin-bottom: 2.75rem;
+
+}
+
+form {
+    width: 100%;
+    margin-bottom: 2.25rem;
+}
+
+.add-item-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+
+    & input[type='text'] {
+        padding: 11px 18px;
+        border-radius: 12px;
+        border: 2px solid var(--border-primary);
+        font-size: 18px;
+
+        &::placeholder {
+            color: var(--content-tertiary);
+            font-size: var(--fs-base);
+            font-weight: 300;
+        }
+    }
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.item {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background-secondary);
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--content-primary);
+
+    & .checkbox {
+        margin-right: .5rem;
+
+        appearance: none;
+        border: 1px solid var(--border-primary);
+        border-radius: 6px;
+        height: 16px;
+        width: 16px;
+        
+        transition: background-color .3s;
+        
+        &:checked {
+            background-color: var(--color-brand);
+            border: 1px solid var(--color-brand);
+            background-image: url('../icons/Vector.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    & .delete-btn {
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: color .3s;
+
+        &:hover {
+            color: var(--color-brand);
+        }
+    }
+}
+
+.item:has(input:checked) {
+    text-decoration: line-through;
+    background-color: #c07c9f;
+    color: #fff;
+
+    & .delete-btn {
+        color: #fff;
+    }
+}
+
+.delete-alert {
+    background-color: var(--color-danger);
+    color: var(--always-white);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    & .bi-exclamation-circle-fill {
+        margin-right: .5rem;
+    }
+
+    & .bi-x {
+        font-size: 24px;
+        margin-left: auto;
+    }
+}
+
+.delete-alert.hidden {
+    display: none;
+}
+
+@media (width >= 768px) {
+    header {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .add-item-box {
+        flex-direction: row;
+        align-items: center;
+
+        & #add-item {
+            flex: 1;
+        }
+    }
+}

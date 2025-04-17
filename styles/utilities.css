@@ -1,0 +1,28 @@
+.btn {
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    font: var(--fw-semibold) var(--fs-base)/20px var(--ff-base);
+    
+    padding: 11px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: var(--color-brand-hover);
+    }
+}
+
+.container {
+    padding-inline: 32px;
+    width: 24rem;
+    margin: 32px auto;
+}
+
+@media (width >= 768px) {
+    .container {
+        width: 39.18rem;
+        padding: 0;
+    }
+}
