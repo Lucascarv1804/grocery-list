@@ -51,7 +51,7 @@ form {
 }
 
 .item {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -60,17 +60,18 @@ form {
     padding: 12px;
     border-radius: 12px;
     color: var(--content-primary);
-
+    transition: all .3s;
+    
     & .checkbox {
         margin-right: .5rem;
-
+        
         appearance: none;
         border: 1px solid var(--border-primary);
         border-radius: 6px;
         height: 16px;
         width: 16px;
-        
         transition: background-color .3s;
+        
         
         &:checked {
             background-color: var(--color-brand);
@@ -97,11 +98,12 @@ form {
 
 .item:has(input:checked) {
     text-decoration: line-through;
-    background-color: #c07c9f;
-    color: #fff;
-
+    background-color: #fffaff;
+    color: var(--color-brand);
+    
     & .delete-btn {
-        color: #fff;
+        color: var(--color-brand);
+        /* color: #fff; */
     }
 }
 
