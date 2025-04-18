@@ -30,7 +30,7 @@ itemsContainer.addEventListener("click", (e) => {
 
 function newItem(text) {
     return `
-        <input type="checkbox" name="" class="checkbox">
+        <input type="checkbox" class="checkbox">
         <span>${text}</span>
         <button class="delete-btn">
             <i class="bi bi-trash3"></i>
