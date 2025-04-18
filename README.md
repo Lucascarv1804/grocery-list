@@ -23,8 +23,7 @@ Uma lista de compras simples e **100% responsiva** feita como parte dos estudos 
 
 ## 📷 Preview
 
-![Grocery List Preview](<img width="900" alt="image" src="https://github.com/user-attachments/assets/9170a6e7-d4fa-40eb-bcaf-bdac3b3b0b00" />
-)
+![Grocery List Preview](<img width="900" alt="image" src="https://github.com/user-attachments/assets/9170a6e7-d4fa-40eb-bcaf-bdac3b3b0b00"/>)
 
 ---
 
